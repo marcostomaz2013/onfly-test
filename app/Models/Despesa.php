@@ -1,12 +1,11 @@
 <?php
 
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Despesa extends Model
 {
     use HasFactory;
     /**
@@ -15,10 +14,9 @@ class User extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'nome',
-        'cpf_cnpj',
-        'email',
-        'nascimento_criacao',
-        'password',
+        'descricao',
+        'dt_despesa',
+        'user_id',
+        'valor'
     ];
 }
